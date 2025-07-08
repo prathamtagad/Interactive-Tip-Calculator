@@ -10,6 +10,14 @@ let currentBillValue = 0;
 let currentTipValue = 0;
 let numberOfPeopleValue = 1;
 
+function setActive(clickedButton) {
+    const custominput = document.getElementById("custom-tip-input");
+    const buttons = document.querySelectorAll(".tip-percent-btn");
+    buttons.forEach(btn => btn.classList.remove("pressed"));
+    custominput.classList.remove("pressed");
+    clickedButton.classList.add("pressed");
+}
+
 billInput.addEventListener('input', function(event){
     currentBillValue = billInput.value;
     console.log('Bill Input changed, current value:', currentBillValue);
@@ -28,6 +36,7 @@ tipbuttons.forEach(function(button){
 customTipInput.addEventListener('input', function(event){
     currentTipValue = customTipInput.value;
     console.log(currentBillValue);
+    setActive(this);
     calculateTip();
 });
 
@@ -71,4 +80,8 @@ resetButton.addEventListener('click', function(event){
     billInput.value = '';
     customTipInput.value = '';
     peopleInput.value = '';
+    const custominput = document.getElementById("custom-tip-input");
+    const buttons = document.querySelectorAll(".tip-percent-btn");
+    buttons.forEach(btn => btn.classList.remove("pressed"));
+    custominput.classList.remove("pressed");
 });

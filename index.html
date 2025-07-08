@@ -7,32 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="heading">Tip Calculator</div>
     <div class="calculator-container">
         <div class="input-section">
-            <p>Input section</p>
-            <div class="form-control">
+            <p class="section-heading">Input section</p>
+            <div class="form-control" id="bill-amount">
                 <label for="bill">Bill</label>
                 <input type="number" class="input-field" id="bill-input" placeholder="00" min="0">
             </div>
             <div class="form-control">
-                <p>Select tip %</p>
+                <label for="tip-buttons-container">Select tip %</label>
                 <div class="tip-buttons-container">
-                    <button type="button" class="tip-percent-btn" value="5%">5%</button>
-                    <button type="button" class="tip-percent-btn" value="10%">10%</button>
-                    <button type="button" class="tip-percent-btn" value="15%">15%</button>
-                    <button type="button" class="tip-percent-btn" value="25%">25%</button>
-                    <button type="button" class="tip-percent-btn" value="50%">50%</button>
+                    <button type="button" class="tip-percent-btn" onclick="setActive(this)" value="5%">5%</button>
+                    <button type="button" class="tip-percent-btn" onclick="setActive(this)" value="10%">10%</button>
+                    <button type="button" class="tip-percent-btn" onclick="setActive(this)" value="15%">15%</button>
+                    <button type="button" class="tip-percent-btn" onclick="setActive(this)" value="25%">25%</button>
+                    <button type="button" class="tip-percent-btn" onclick="setActive(this)" value="50%">50%</button>
                     <input type="number" class="input-field tip-custom-input" id="custom-tip-input" placeholder="Custom" min="0">
                 </div>
             </div>
             <div class="form-control">
-                <br>
                 <label for="num-people">Number of People</label>
                 <input type="number" class="input-field" id="num-people" placeholder="1" min="1">
             </div>
         </div>
         <div class="output-section">
-            <p>Output Section</p>
+            <p class="section-heading">Output Section</p>
             <div class="result-line">
                 <div class="result-label">
                     <p>Tip amount</p>

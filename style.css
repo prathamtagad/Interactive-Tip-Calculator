@@ -1,178 +1,116 @@
-/* Basic styling for the entire page */
 body {
-    background-image: url("./225279.jpg");
-    background-size: cover;
-    color: #4B5A6A;            /* Default text color for the page */
-    line-height: 1.6;          /* Improves general readability */
-    margin: 0;                 /* Reset default browser margin on body */
+    background-color: #1A3A3A;
+    color: black;
+    line-height: 1.6;
+    margin: 0;
 }
 
-/* Styling for the main calculator container */
-.calculator-container {
-    background-color: #ffffff00;  /* White background */
-    backdrop-filter: blur(10px);
-    padding: 32px;              /* Internal spacing */
-    border-radius: 15px;        /* Rounded corners */
-    
-    /* Width and Centering */
-    max-width: 800px;           /* Max width */
-    width: 90%;                 /* Responsive width */
-    margin: 50px auto;          /* Centering */
-
-    /* Visual Polish */
-    box-shadow: 0 15px 30px rgba(0, 71, 75, 0.15); 
-
-    box-sizing: border-box; 
-
-    /* Flexbox Layout properties */
-    display: flex; 
-    flex-direction: row; 
-    gap: 30px; 
-    /* align-items: stretch; */ /* Default behavior for flex items, making them equal height */
+body::-webkit-scrollbar{
+    display: none;
 }
 
-/* Styling for input and output sections as flex items */
-.input-section,
-.output-section {
-    flex: 1; /* Both sections will share the available space equally */
-}
-
-/* Styling for all input fields */
-.input-field {
-    width: 100%;
-    padding: 10px 12px;
-    margin: 0 0 16px 0; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem; 
-    background-color: #fff;
-    box-sizing: border-box; 
-}
-
-/* Styling for labels associated with input fields and descriptive paragraphs */
-label,
-.form-control > p {
-    display: block;        
-    font-size: 0.9rem;     
-    font-weight: 600;      
-    color: #4B5A6A;        
-    margin-bottom: 6px;    
-}
-
-/* NEW: Styling for the container of tip buttons and custom input */
-.tip-buttons-container {
-    display: grid;                      /* Make this a grid container */
-    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
-                                        /* With 6 items (5 buttons, 1 input), this forms 2 rows */
-    gap: 10px;                          /* 10px space between buttons/input horizontally and vertically */
-    margin-bottom: 16px;                /* Space after the button grid, before the next form-control */
-    /* height: 25vh; */
-}
-
-/* Styling for the tip percentage buttons */
-.tip-percent-btn {
-    height: 70px;
-    padding-left: 10px;           
-    padding-right: 10px;           
-    /* width: 100%; */ /* This will now apply to 100% of its grid cell width, which is good */           
-    background-color: #00474B; 
-    color: #FFF;               
-    border: none;              
-    border-radius: 4px;        
-    font-size: 1.1rem;         
-    font-weight: 700;          
-    text-align: center;        
-    cursor: pointer;           
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; 
-}
-
-/* Specific styling for the custom tip input */
-/* It already has .input-field class for most styles */
-/* If it needs specific grid placement (e.g., span columns), you'd add it here */
-.tip-custom-input {
-    /* placeholder=\"Custom\" will be centered by default in input field */
-    /* font-size can be inherited or set specifically if needed */
-    /* No specific grid properties needed if it just fills one cell */
+input{
     display: flex;
-    width: 100px;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 15px;
+    border: 0.5px solid;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    width: 90%;
+    margin: 5px;
+    transition: 0.4s ease;
 }
 
-.tip-percent-btn:hover {
-    background-color: #26C2AD; 
-    color: #00474B;           
+label{
+    display: flex;
+    margin: 5px;
+    font-size: 1.2rem;
 }
 
-.tip-percent-btn.active {
-    background-color: #9FE8DF; 
-    color: #00474B;           
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: #DCCFEC;
+    box-shadow: 2px 2px 5px black;
+    font-size: 1.5rem;
+    padding: 20px;
 }
 
-/* Styling for the output display section */
-.output-section {
-    background-color: #00474B; 
-    padding: 30px 25px;        
-    border-radius: 8px;        
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
-    gap: 20px; 
+.calculator-container{
+    display: flex;
+    background-color: #4F517D;
+    padding: 20px;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px black;
 }
 
-/* NEW: Styling for each line of result using Flexbox */
-.result-line {
-    display: flex;                /* Make each result line a flex container */
-    justify-content: space-between; /* Push label to left, value to right */
-    align-items: center;          /* Vertically align items in the center */
-    /* gap: 10px; */              /* Optional: if you want a fixed gap instead of space-between spreading them fully */
+.section-heading{
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #DCCFEC;
+    border-radius: 10px;
+    padding: 5px;
 }
 
-/* Styling for the labels within the result lines */
-/* .result-label remains a block for its internal <p> and <span> */
-.result-label p {
-    color: #FFFFFF;             
-    font-size: 0.9rem;          
-    margin: 0;                  
-    font-weight: 600;           
+.input-section{
+    width: 95%;
+    margin: 15px;
+    background-color: #A997DF;
+    backdrop-filter: blur(20px);
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-radius: 20px;
 }
 
-.result-label span { /* e.g., "/ person" */
-    color: #7FA8A9;             
-    font-size: 0.8rem;          
-    display: block; /* Keep this to stack "/ person" under the main label part */            
+.tip-percent-btn{    
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 0.4s ease;
 }
 
-/* Styling for the actual calculated values */
-/* .result-value contains the span#id */
-.result-value span { 
-    color: #26C2AD;             
-    font-size: 2.2rem;          
-    font-weight: 700;           
-    /* display: block; */ /* No longer strictly needed as parent .result-value is a flex item */
-                         /* text-align: right will still apply to the text content within the span */
-    text-align: right;          
+.pressed{
+    background-color: #DDC4DD;
 }
 
-.reset-btn {
-    width: 100%;                
-    padding: 12px;              
-    background-color: #26C2AD;  
-    color: #00474B;             
-    border: none;               
-    border-radius: 4px;         
-    font-size: 1.1rem;          
-    font-weight: 700;           
-    text-transform: uppercase;  
-    text-align: center;         
-    cursor: pointer;            
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; 
+.output-section{
+    margin: 15px;
+    width: 95%;
+    background-color: #A997DF;
+    backdrop-filter: blur(20px);
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-radius: 20px;
 }
 
-.reset-btn:hover {
-    background-color: #9FE8DF;  
-    color: #00474B;             
+.reset-btn{
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 95%;
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s ease;
 }
 
-.reset-btn:active {
-    background-color: #00474B;  
-    color: #9FE8DF;             
+.reset-btn:hover{
+    transform: scale(1.04);
+}
+
+.reset-btn:active{
+    transform: scale(0.96);
 }
