@@ -1,44 +1,58 @@
-# 💸 Interactive Tip Calculator
+<p align="center">
+  <img src="./banner.png" alt="Interactive Tip Calculator Banner" />
+</p>
 
-An intuitive and beautifully designed Tip Calculator to help you split bills with ease! Whether you're dining out with friends or just want to quickly calculate tips, this app has your back. 😎
+<h1 align="center">💸 Interactive Tip Calculator</h1>
 
-🔗 **Live Preview**: [interactive-tip-calculator.netlify.app](https://interactive-tip-calculator.netlify.app/)
+<p align="center">
+  A clean, responsive, and interactive tip calculator to make bill splitting easier than ever.
+</p>
+
+<p align="center">
+  <a href="https://interactive-tip-calculator.netlify.app/"><img src="https://img.shields.io/badge/Live%20Site-Netlify-green?style=for-the-badge&logo=netlify" alt="Live Demo Badge" /></a>
+  <a href="https://github.com/prathamtagad/Interactive-Tip-Calculator/stargazers"><img src="https://img.shields.io/github/stars/prathamtagad/Interactive-Tip-Calculator?style=for-the-badge" /></a>
+  <a href="https://github.com/prathamtagad/Interactive-Tip-Calculator/network"><img src="https://img.shields.io/github/forks/prathamtagad/Interactive-Tip-Calculator?style=for-the-badge" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/prathamtagad/Interactive-Tip-Calculator?style=for-the-badge" /></a>
+</p>
 
 ---
 
-## 🖼️ Preview
+## 🖥️ Live Preview
 
-![Interactive Tip Calculator Screenshot](./Preview.jpeg)
+> 🔗 [Click here to use the calculator live!](https://interactive-tip-calculator.netlify.app/)
+
+<img src="./Preview.jpeg" alt="App Screenshot" style="border-radius: 8px;" />
 
 ---
 
 ## 🚀 Features
 
-- 💰 Calculates tip amount per person
-- 👥 Split bill among multiple people
-- 🔘 Choose predefined tip % (5%, 10%, 15%, 25%, 50%) or enter a custom value
-- 🌗 Clean, responsive, and elegant UI
-- 🔁 Reset all values with one click
-- ⚡️ Instant result updates as you type
+- ✅ Tip calculation per person
+- ✅ Split total amount among group
+- ✅ Predefined and custom tip percentage options
+- ✅ Real-time calculation
+- ✅ Reset button to clear everything
+- ✅ Fully responsive and mobile-friendly
 
 ---
 
-## 🛠️ Tech Stack
+## 🧰 Tech Stack
 
-| Technology | Percentage Used |
-|------------|------------------|
-| 🌐 HTML     | `35.0%`           |
-| 🎨 CSS      | `29.7%`           |
-| ⚙️ JavaScript | `35.3%`         |
+| Tech        | Role              |
+|-------------|------------------|
+| **HTML**    | Structure (35.0%) |
+| **CSS**     | Styling (29.7%)   |
+| **JavaScript** | Logic (35.3%) |
+
+No frameworks. 100% pure and clean!
 
 ---
 
-## 📦 Getting Started
+## 📥 How to Use
 
-You can get a local copy up and running in just a few steps:
-
-### 🔄 Clone this repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/Interactive-Tip-Calculator.git
+git clone https://github.com/prathamtagad/Interactive-Tip-Calculator.git
 cd Interactive-Tip-Calculator
+index.html
