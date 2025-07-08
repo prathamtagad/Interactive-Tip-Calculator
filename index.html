@@ -7,7 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <script src="script.js"></script>
+    <div class="calculator-container">
+        <div class="input-section">
+            <p>Input section</p>
+            <div class="form-control">
+                <label for="bill">Bill</label>
+                <input type="number" class="input-field" placeholder="00" min="0">
+            </div>
+            <div class="form-control">
+                <p>Select tip %</p>
+                <div class="tip-buttons-container">
+                    <button type="button" class="tip-percent-button" value="5%">5%</button>
+                    <button type="button" class="tip-percent-button" value="10%">10%</button>
+                    <button type="button" class="tip-percent-button" value="15%">15%</button>
+                    <button type="button" class="tip-percent-button" value="25%">25%</button>
+                    <button type="button" class="tip-percent-button" value="50%">50%</button>
+                    <input type="number" class="input-field tip-custom-input" placeholder="Custom" min="0">
+                </div>
+            </div>
+            <div class="form-control">
+                <br>
+                <label for="num-people">Number of People</label>
+                <input type="number" class="input-field" id="num-people" placeholder="1" min="1">
+            </div>
+        </div>
+        <div class="output-section">
+            <p>Output Section</p>
+            <div class="result-line">
+                <div class="result-label">
+                    <p>Tip amount</p>
+                    <span>/ Person</span>
+                </div>
+                <div class="result-value">
+                    <span id="tip-amount-display">$0.00</span>
+                </div>
+            </div>
+            <div class="result-line">
+                <div class="result-label">
+                    <p>Total</p>
+                    <span>/ person</span>
+                </div>
+                <div class="result-value">
+                    <span id="total-amount-display">$0.00</span>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="reset-btn" id="reset-button">RESET</button>
+    </div>
+    <script src="script.js" defer></script>
 </body>
 </html>
