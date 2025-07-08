@@ -69,8 +69,8 @@ resetButton.addEventListener('click', function(event){
     currentTipValue = 0;
     numberOfPeopleValue = 1;
 
-    tipAmountDisplay.innerText = "$0.00";
-    totalAmountDisplay.innerText = "$0.00";
+    tipAmountDisplay.innerText = "₹0.00";
+    totalAmountDisplay.innerText = "₹0.00";
     billInput.value = '';
     customTipInput.value = '';
     peopleInput.value = '';

@@ -130,3 +130,13 @@ label{
 .reset-btn:active{
     transform: scale(0.96);
 }
+
+.info{
+    background-color: #C3B3E6;
+    padding: 7px;
+    text-align: center;
+    color: black;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
