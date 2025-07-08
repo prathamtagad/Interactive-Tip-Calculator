@@ -55,4 +55,5 @@ No frameworks. 100% pure and clean!
 ```bash
 git clone https://github.com/prathamtagad/Interactive-Tip-Calculator.git
 cd Interactive-Tip-Calculator
-index.html
+./index.html
+```
