@@ -56,16 +56,19 @@ function calculateTip(){
     }
 }
 
+function update(tipAmountPerPerson, totalPerPerson){
+    tipAmountDisplay.innerText = Number(tipAmountPerPerson).toFixed(2);
+    totalAmountDisplay.innerText = Number(totalPerPerson).toFixed(2);
+}
+
 resetButton.addEventListener('click', function(event){
     currentBillValue = 0;
     currentTipValue = 0;
     numberOfPeopleValue = 1;
 
     tipAmountDisplay.innerText = "$0.00";
-    totalAmountDisplay.innerText = "$0.00"
+    totalAmountDisplay.innerText = "$0.00";
+    billInput.value = '';
+    customTipInput.value = '';
+    peopleInput.value = '';
 });
-
-function update(tipAmountPerPerson, totalPerPerson){
-    tipAmountDisplay.innerText = Number(tipAmountPerPerson).toFixed(2);
-    totalAmountDisplay.innerText = Number(totalPerPerson).toFixed(2);
-}
